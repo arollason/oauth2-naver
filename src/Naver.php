@@ -18,9 +18,9 @@ class Naver extends AbstractProvider
      */
     protected $logger;
 
-    public function __construct()
+    public function __construct0($options  = [])
     {
-        parent::__construct();
+        parent::__construct($options);
         $this->logger = new Psr3('sociallogin_requests.log', Zend_Log::DEBUG);
     }
     
